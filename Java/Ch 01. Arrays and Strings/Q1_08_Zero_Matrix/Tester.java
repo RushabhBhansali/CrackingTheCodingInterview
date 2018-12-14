@@ -31,13 +31,14 @@ public class Tester {
 	public static void main(String[] args) {
 		int nrows = 10;
 		int ncols = 15;
-		int[][] matrix1 = AssortedMethods.randomMatrix(nrows, ncols, -10, 10);		
+		int[][] matrix1 = AssortedMethods.randomMatrix(10, 5, -8, 4);
 		int[][] matrix2 = cloneMatrix(matrix1);
 
 		AssortedMethods.printMatrix(matrix1);
 		
 		QuestionA.setZeros(matrix1);
-		QuestionB.setZeros(matrix2);
+		//QuestionB.setZeros(matrix2);
+		practice.setZeros(matrix2);
 		
 		System.out.println();
 		
