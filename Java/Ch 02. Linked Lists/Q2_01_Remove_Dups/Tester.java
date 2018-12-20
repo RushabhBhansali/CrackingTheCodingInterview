@@ -8,8 +8,8 @@ public class Tester {
 		LinkedListNode first = new LinkedListNode(0, null, null); //AssortedMethods.randomLinkedList(1000, 0, 2);
 		LinkedListNode head = first;
 		LinkedListNode second = first;
-		for (int i = 1; i < 2; i++) {
-			second = new LinkedListNode(i % 2, null, null);
+		for (int i = 1; i < 8; i++) {
+			second = new LinkedListNode(i % 4, null, null);
 			first.setNext(second);
 			second.setPrevious(first);
 			first = second;
@@ -23,7 +23,7 @@ public class Tester {
 		QuestionA.deleteDups(cloneA);
 		QuestionA.deleteDups(cloneB);
 		QuestionA.deleteDups(cloneC);
-		Practice.deleteDups(cloneD);// added for practice
+		Practice2.deleteDups(cloneD);// added for practice
 		
 		System.out.println(cloneA.printForward());
 		System.out.println(cloneB.printForward());

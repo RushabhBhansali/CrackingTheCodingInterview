@@ -1,6 +1,7 @@
 package Q2_06_Palindrome;
 
 import CtCILibrary.LinkedListNode;
+import Q17_13_ReSpace.ParseResult;
 
 public class Tester {
 	
@@ -30,13 +31,18 @@ public class Tester {
 				boolean resultA = QuestionA.isPalindrome(head);
 				boolean resultB = QuestionB.isPalindrome(head);
 				boolean resultC = QuestionC.isPalindrome(head);
+				boolean resultP = Practice.isPalindrome(head);
 				System.out.println("A: " + resultA);
 				System.out.println("B: " + resultB);
 				System.out.println("C: " + resultC);
-				if (resultA != resultB || resultB != resultC) {
+				System.out.println("P: " + resultP);
+				if (resultA != resultB || resultB != resultC || resultC != resultP) {
 					System.out.println("ERROR");
 					length = max;
-					break;
+					//break;
+				}
+				else{
+					//System.out.println("success");
 				}
 				if (i >= 0) {
 					nodes[i].data--;

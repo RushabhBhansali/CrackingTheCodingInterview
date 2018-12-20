@@ -4,7 +4,6 @@ import CtCILibrary.AssortedMethods;
 import CtCILibrary.LinkedListNode;
 
 public class Question {
-
 	public static boolean deleteNode(LinkedListNode n) {
 		if (n == null || n.next == null) {
 			return false; // Failure

@@ -22,11 +22,13 @@ public class Tester {
 		LinkedListNode hA = Question.partition(createLinkedList(), 5);
 		LinkedListNode hB = QuestionB.partition(createLinkedList(), 5);
 		LinkedListNode hC = QuestionC.partition(createLinkedList(), 5);
+		LinkedListNode hP = Practice.partition(createLinkedList(), 5);
 		
 		/* Print Result */
 		System.out.println(hA.printForward());
 		System.out.println(hB.printForward());
 		System.out.println(hC.printForward());
+		System.out.println(hP.printForward());
 	}
 
 }
